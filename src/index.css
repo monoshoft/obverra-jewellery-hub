@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: "Cinzel", serif;
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-jakarta), sans-serif;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 15, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel), serif;
+}
+.font-cormorant {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+.font-playfair {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+.font-jakarta {
+  font-family: var(--font-jakarta), sans-serif;
+}
+.font-outfit {
+  font-family: var(--font-outfit), sans-serif;
+}
